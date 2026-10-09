@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-08 18:59:58",
+  "author": "Ing. Miguel Antonio Benitez Gonzalez (UTP)",
+  "test_samples_count": 18,
+  "train_samples_count": 42,
+  "results": {
+    "scratch_naive_bayes": {
+      "accuracy": 0.7778,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1_score": 0.6667,
+      "train_time_ms": 0.2,
+      "infer_latency_per_sample_ms": 0.1567,
+      "model_type": "Algoritmo Matematico Desarrollado desde Cero (NumPy Puro)"
+    },
+    "production_pipeline": {
+      "accuracy": 0.8333,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692,
+      "train_time_ms": 9.36,
+      "infer_latency_per_sample_ms": 0.0483,
+      "model_type": "Pipeline Scikit-Learn Optimizado (N-Grams + LogisticRegression)"
+    },
+    "semantic_moderator": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "train_time_ms": 0.0,
+      "infer_latency_per_sample_ms": 0.088,
+      "model_type": "Motor Semantico Heuristico (Lexicones Ponderados + Regex)"
+    }
+  }
+}
